@@ -1,0 +1,7 @@
+.select {
+  min-width: 14rem;
+}
+.compact {
+  max-width: 13rem;
+  min-width: 0;
+}

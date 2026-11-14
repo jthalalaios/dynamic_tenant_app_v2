@@ -1,0 +1,101 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 300px) 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+.list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.25rem;
+}
+.item {
+  width: 100%;
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+.item:hover {
+  background: var(--surface-elevated);
+}
+.itemActive {
+  border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
+  background: var(--primary-soft);
+}
+.itemName {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+.itemMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+.toggleField {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+}
+.matrixTitle {
+  font-size: 1rem;
+  margin: 1.5rem 0 0.75rem;
+}
+.matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.9rem;
+}
+.group {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0.6rem 0.9rem 0.8rem;
+  margin: 0;
+}
+.group legend {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.4rem;
+  font-weight: 700;
+}
+.matrixItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  padding: 0.35rem 0;
+}
+.matrixItem label {
+  display: grid;
+  gap: 0.1rem;
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+.matrixItem code {
+  font-size: 0.75rem;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+.spacer {
+  flex: 1;
+}
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}

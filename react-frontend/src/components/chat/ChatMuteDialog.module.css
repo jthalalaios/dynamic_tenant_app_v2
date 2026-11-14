@@ -1,0 +1,35 @@
+.form {
+  display: grid;
+  gap: 1.1rem;
+}
+.who {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+.fieldset {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.legend {
+  margin-bottom: 0.45rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.field {
+  display: grid;
+}
+.durations {
+  display: flex;
+  flex-wrap: wrap;
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}

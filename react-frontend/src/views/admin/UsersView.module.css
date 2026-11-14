@@ -1,0 +1,13 @@
+.userCell {
+  display: grid;
+}
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+.toggleField {
+  display: flex !important;
+  align-items: center;
+  gap: 0.6rem;
+}

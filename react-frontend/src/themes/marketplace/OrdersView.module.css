@@ -1,0 +1,50 @@
+.line {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.lineProduct {
+  flex: 1;
+  min-width: 0;
+}
+.lineQty {
+  width: 9rem;
+}
+.lineQtyInput {
+  width: 100%;
+  min-width: 0;
+}
+.lineMeta {
+  margin-left: 0.5rem;
+  font-size: 0.85rem;
+}
+/* Actions column: centred pill buttons */
+.table :global(th).colCenter :global(.p-column-header-content) {
+  justify-content: center;
+}
+.table :global(td).colCenter {
+  text-align: center;
+}
+.actions {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.action {
+  padding: 0.35rem 0.8rem;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+.action:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.12);
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}

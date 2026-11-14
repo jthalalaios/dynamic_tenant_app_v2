@@ -1,0 +1,47 @@
+.media {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 140px;
+  color: var(--primary);
+  background:
+    radial-gradient(circle at 75% 20%, var(--accent-soft), transparent 55%),
+    linear-gradient(135deg, var(--surface-elevated), var(--primary-soft));
+}
+/* primeicons sets its own font-size on .pi, so size the icon directly */
+.media > :global(.pi) {
+  font-size: 2.75rem;
+  filter: drop-shadow(0 6px 12px color-mix(in srgb, var(--primary) 25%, transparent));
+}
+.stock {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+}
+.content {
+  padding: 1rem 1.1rem;
+}
+.category {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.name {
+  font-size: 1.05rem;
+  margin: 0.25rem 0 0.4rem;
+}
+.rating {
+  display: flex;
+  gap: 0.15rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+}
+.price {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+.add {
+  margin-left: auto;
+}

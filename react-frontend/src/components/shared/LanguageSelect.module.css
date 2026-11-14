@@ -1,0 +1,51 @@
+.select {
+  position: relative;
+}
+
+.trigger {
+  color: var(--text);
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.45rem 0.6rem;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.4rem;
+  min-width: 140px;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12);
+  z-index: 20;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.flag {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.option:hover,
+.option.active {
+  background: var(--surface-elevated);
+  color: var(--primary);
+}

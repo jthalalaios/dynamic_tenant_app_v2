@@ -1,0 +1,80 @@
+.form {
+  display: grid;
+  gap: 1rem;
+}
+.field {
+  display: grid;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.field label,
+.field legend {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.field legend {
+  margin-bottom: 0.4rem;
+}
+.field :global(.field-error) {
+  margin-top: 0;
+}
+.icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(2.8rem, 1fr));
+  gap: 0.45rem;
+}
+.icon {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 140ms ease;
+}
+.icon:hover {
+  color: var(--primary);
+  border-color: color-mix(in srgb, var(--primary) 40%, var(--border));
+}
+.iconActive {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-color: transparent;
+  color: var(--primary-contrast);
+  box-shadow: 0 6px 16px color-mix(in srgb, var(--primary) 28%, transparent);
+}
+.iconActive:hover {
+  color: var(--primary-contrast);
+}
+.audienceNote {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+}
+.lockField {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface-elevated);
+}
+.lockField label {
+  display: grid;
+  gap: 0.15rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.spacer {
+  flex: 1;
+}

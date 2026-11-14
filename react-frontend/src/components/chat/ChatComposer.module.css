@@ -1,0 +1,62 @@
+.composer {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.6rem;
+  margin: 0 1rem 1rem;
+  padding: 0.45rem 0.45rem 0.45rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  transition: border-color 140ms ease, box-shadow 140ms ease;
+}
+.composer:focus-within {
+  border-color: color-mix(in srgb, var(--primary) 55%, var(--border));
+  box-shadow: 0 0 0 4px var(--primary-soft), 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+.input {
+  flex: 1;
+  max-height: 10rem;
+  overflow-y: auto !important;
+  padding: 0.5rem 0;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  resize: none;
+  font: inherit;
+  line-height: 1.45;
+}
+.side {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.count {
+  color: var(--muted);
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+.countFull {
+  color: #dc2626;
+  font-weight: 700;
+}
+.blocked {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 1rem 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.blockedMuted {
+  border: 1px solid #fcd34d;
+  background: #fffbeb;
+  color: #92400e;
+}
+.blockedLocked {
+  border: 1px solid var(--border);
+  background: var(--surface-elevated);
+  color: var(--muted);
+}

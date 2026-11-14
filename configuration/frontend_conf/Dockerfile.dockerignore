@@ -1,0 +1,12 @@
+# Build context is the repository root; only react-frontend sources are needed.
+nodejs-app
+configuration
+.env
+
+# Installed inside the image by "npm install"
+react-frontend/node_modules
+react-frontend/dist
+react-frontend/logs
+
+# OS files
+**/.DS_Store

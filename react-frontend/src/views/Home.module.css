@@ -1,0 +1,57 @@
+.hero {
+  background: var(--hero-glow, none), linear-gradient(135deg, var(--surface) 0%, var(--surface-elevated) 100%);
+}
+.heroInner {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.heroLeft,
+.heroRight {
+  flex: 1;
+  min-width: 0;
+}
+.eyebrow {
+  margin-bottom: 0.5rem;
+}
+.heroTitle {
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.75rem;
+}
+.heroSub {
+  color: var(--muted);
+  line-height: 1.65;
+}
+.heroCta {
+  margin-top: 1.4rem;
+}
+.carouselTitle {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.5rem 0.5rem;
+}
+/* Let carousel items shrink to their slot instead of overflowing it */
+.carousel :global(.p-carousel-item) {
+  min-width: 0;
+}
+/* Room for the card hover lift/shadow inside the carousel viewport */
+.slide {
+  height: 100%;
+  padding: 0.5rem 0.4rem 0.9rem;
+}
+
+/* Animations */
+.fadeIn { animation: fadeIn 0.6s ease both; }
+.fadeUp { animation: slideUp 0.6s ease both; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .heroInner { flex-direction: column; align-items: stretch; }
+}

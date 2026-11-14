@@ -1,0 +1,14 @@
+# Secrets: database password, APP_KEY, SMTP credentials
+.env
+nodejs-app/.env
+
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Logs and OS files
+logs/
+*.log
+.DS_Store
